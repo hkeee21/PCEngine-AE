@@ -27,7 +27,7 @@ Then config the ncu_report environment:
         bash setup.sh
     ```
 - (Optional) Install step by step
-    - Install PCEngie
+    - Install PCEngine
     ```
         cd lib/PCEngine
         python setup.py install
