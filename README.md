@@ -8,7 +8,7 @@ This is the repository of PCEngine code for artifacts evaluation purpose. PCEngi
     TorchSparse 2.0.0
     SpConv 2.2.3+
 ```
-Note the artifacts have been testes under following environments
+Note the artifacts have been tested under following environments
 ``` 
     CUDA 11.1
     PyTorch 1.10.0
@@ -39,7 +39,7 @@ Then config the ncu_report environment:
         cd torchsparse
         python setup.py install
     ```
-    - SpConv can be installed through `pip`. Please refer to the the [official repository](https://github.com/traveller59/spconv).
+    - SpConv can be installed through `pip`. Please refer to the [official repository](https://github.com/traveller59/spconv).
 - Download datasets
 
     Please download [AE-datasets](https://drive.google.com/file/d/1137pnf`O2l-EP2ZTGBGfPvGrwBl-LX331/view?usp=share_link) and unzip the `AE-datasets.zip` file into a PCEngine-AE subdirectory as follows
