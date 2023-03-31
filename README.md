@@ -24,7 +24,7 @@ Then config the ncu_report environment:
 
 - Install PCEngine, TorchSparse and SpConv
     ```
-    bash setup.sh
+        bash setup.sh
     ```
 - (Optional) Install step by step
     - Install PCEngie
@@ -61,39 +61,39 @@ Then config the ncu_report environment:
   
   Run the following command to compare the sparse convolution output with SpConv.
   ```
-  python correctness.py
+    python correctness.py
   ```
 - To run artifacts evaluation
   
   Evaluate the end-to-end performance and generate the results into a `.csv` file (Fig. 9(a))
   ```
-  cd evaluation
-  python Fig9a-end-to-end.py
+    cd evaluation
+    python Fig9a-end-to-end.py
   ```
   Evaluate the sparse convolution performance and generate the results into a `.csv` file (Fig. 9(b))
   ```
-  cd evaluation
-  python Fig9b-kernel.py
+    cd evaluation
+    python Fig9b-kernel.py
   ```
   Compare gather and scatter performance to TorchSparse and generate the results into a `.csv` file (Fig. 10)
   ```
-  cd evaluation
-  python Fig10-gather-scatter.py
+    cd evaluation
+    python Fig10-gather-scatter.py
   ```
   Conduct the ablation study on coded-CSR format and generate the results into a `.csv` file (Fig. 11)
   ```
-  cd evaluation
-  python Fig11-coded-CSR.py
+    cd evaluation
+    python Fig11-coded-CSR.py
   ```
   Conduct the ablation study on GEMM scheme and generate the results into a `.csv` file (Fig. 11)
   ```
-  cd evaluation
-  python Fig12-GEMM.py
+    cd evaluation
+    python Fig12-GEMM.py
   ```
   Conduct the ablation study on heuristics adaptive dataflow and generate the results into a `.csv` file (Fig. 11)
   ```
-  cd evaluation
-  python Fig13-heuristics.py
+    cd evaluation
+    python Fig13-heuristics.py
   ```
 
 
