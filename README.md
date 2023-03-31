@@ -85,12 +85,12 @@ Then config the ncu_report environment:
     cd evaluation
     python Fig11-coded-CSR.py
   ```
-  Conduct the ablation study on GEMM scheme and generate the results into a `.csv` file (Fig. 11)
+  Conduct the ablation study on GEMM scheme and generate the results into a `.csv` file (Fig. 12)
   ```
     cd evaluation
     python Fig12-GEMM.py
   ```
-  Conduct the ablation study on heuristics adaptive dataflow and generate the results into a `.csv` file (Fig. 11)
+  Conduct the ablation study on heuristics adaptive dataflow and generate the results into a `.csv` file (Fig. 13)
   ```
     cd evaluation
     python Fig13-heuristics.py
