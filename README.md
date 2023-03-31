@@ -31,11 +31,12 @@ Then config the ncu_report environment:
     cd lib/TorchSparse
     rm torchsparse
     git clone https://github.com/mit-han-lab/torchsparse.git
+    cd torchsparse
     python setup.py install
     ```
 - Download datasets
 
-    Please download [```AE-datasets```](https://drive.google.com/file/d/1137pnf`O2l-EP2ZTGBGfPvGrwBl-LX331/view?usp=share_link) and unzip the `AE-datasets.zip` file into a PCEngine-AE subdirectory as follows
+    Please download [AE-datasets](https://drive.google.com/file/d/1137pnf`O2l-EP2ZTGBGfPvGrwBl-LX331/view?usp=share_link) and unzip the `AE-datasets.zip` file into a PCEngine-AE subdirectory as follows
     ```
     |---- PCEngine-AE directory
             |---- AE-datasets
@@ -61,32 +62,32 @@ Then config the ncu_report environment:
   Evaluate the end-to-end performance and generate the results into a `.csv` file (Fig. 9(a))
   ```
   cd evaluation
-  python Figure9a-end-to-end.py
+  python Fig9a-end-to-end.py
   ```
   Evaluate the sparse convolution performance and generate the results into a `.csv` file (Fig. 9(b))
   ```
   cd evaluation
-  python Figure9b-kernel-performance.py
+  python Fig9b-kernel.py
   ```
-  Compare the gather and scatter performance to TorchSparse and generate the results into a `.csv` file (Fig. 10)
+  Compare gather and scatter performance to TorchSparse and generate the results into a `.csv` file (Fig. 10)
   ```
   cd evaluation
-  python Figure10-gather-scatter.py
+  python Fig10-gather-scatter.py
   ```
   Conduct the ablation study on coded-CSR format and generate the results into a `.csv` file (Fig. 11)
   ```
   cd evaluation
-  python Figure11-ablation-coded-CSR.py
+  python Fig11-coded-CSR.py
   ```
   Conduct the ablation study on GEMM scheme and generate the results into a `.csv` file (Fig. 11)
   ```
   cd evaluation
-  python Figure12-ablation-GEMM.py
+  python Fig12-GEMM.py
   ```
   Conduct the ablation study on heuristics adaptive dataflow and generate the results into a `.csv` file (Fig. 11)
   ```
   cd evaluation
-  python Figure13-ablation-heuristics.py
+  python Fig13-heuristics.py
   ```
 
 
