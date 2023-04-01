@@ -1,4 +1,4 @@
-from os import pathsep
+import os
 import numpy as np
 from ...script.utils import sparse_quantize
 import torch
@@ -13,13 +13,13 @@ class KITTIDataset(torch.utils.data.Dataset):
         files = dict()
         for i in range(size): # size < 100
             if i < 10:
-                file = (path + '00000%s.bin' % i)
+                file = os.path.join(path, '00000%s.bin' % i)
             elif i < 100:
-                file = (path + '0000%s.bin' % i)
+                file = os.path.join(path, '0000%s.bin' % i)
             elif i < 1000:
-                file = (path + '000%s.bin' % i)
+                file = os.path.join(path, '000%s.bin' % i)
             elif i < 10000:
-                file = (path + '00%s.bin' % i)
+                file = os.path.join(path, '00%s.bin' % i)
             data = np.fromfile(str(file), dtype=np.float32).reshape(-1, 4)
             files[i] = data
         self.files = files
