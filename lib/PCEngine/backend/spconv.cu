@@ -580,7 +580,7 @@ void ConvolutionForward_naive(
 
         // printf("-----\n");
         // printf("cur_idx: %d, all count: %d, fusion_kofs: %d\n", cur_idx, all_count, fusion_kofs);
-
+        if (gridnum_y == 0){cur_idx += fusion_kofs; continue;}
        
         /*// call horizontal_fused_gemm
         horizontal_fused_gemm<16><<<dim3(gridnum_x, gridnum_y, fusion_kofs), dim3(16, 16, 1)>>>(
