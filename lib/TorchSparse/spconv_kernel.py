@@ -73,7 +73,7 @@ def torchsparse_kernel(c_mid: int, c_out: int, data: str, dataflow):
 
             input = batch['input']
             input_nnz = input.coords.size(0)
-            print('input nnz: %d' % input_nnz)
+            # print('input nnz: %d' % input_nnz)
             input.to(device)
             for j in range(10):
                 outputs = warmup_conv(input)
