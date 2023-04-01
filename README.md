@@ -21,6 +21,7 @@ on an Nvidia RTX 2080 GPU or an Nvidia RTX 3090 GPU.
 In order to use ```ncu_report``` package, please first config your ```$CUDA_HOME``` environment. It probably locates at ```/usr/local/cuda``` or something like that.
 Then config the ncu_report environment:
 ```export PYTHONPATH="${CUDA_HOME}/nsight-compute-xxxx.x.x/extras/python"```
+If the path does not exist, try to use a higher version CUDA.
 
 - Install PCEngine, TorchSparse and SpConv
     ```
