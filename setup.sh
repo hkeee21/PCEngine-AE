@@ -8,5 +8,7 @@ cd torchsparse
 python setup.py install
 echo "Installing SpConv ..."
 pip install spconv-cu114
-cd ../../../
+cd ../../../evaluation
+mkdir results
+cd ../
 echo "Installing finished."
