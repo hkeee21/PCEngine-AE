@@ -61,7 +61,7 @@ def torchsparse_kernel(c_mid: int, c_out: int, data: str, dataflow):
     torchsparse.tune(
         single_conv, 
         DataLoader, 
-        n_samples=100, 
+        n_samples=20, 
         collect_fn=lambda data: data['input'])
 
     count = 0
@@ -88,7 +88,8 @@ def torchsparse_kernel(c_mid: int, c_out: int, data: str, dataflow):
                 end=time.time()
                 dur += end - start
                 count += 1
-        i += 1
+            
+            i += 1
         
     inf_time = dur / count
 

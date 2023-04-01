@@ -59,7 +59,7 @@ def torchsparse_exe(net: str, data: str, dataflow: str):
     torchsparse.tune(
         model, 
         DataLoader, 
-        n_samples=50, 
+        n_samples=20, 
         collect_fn=lambda data: data['input'])
 
     count = 0
