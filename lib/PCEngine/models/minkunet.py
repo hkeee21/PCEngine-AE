@@ -52,7 +52,7 @@ class SparseResUNet(nn.Module):
                     SparseConvBlock(
                         num_channels[k],
                         num_channels[k],
-                        3,
+                        2,
                         stride=2,
                     ),
                     SparseResBlock(num_channels[k], num_channels[k + 1], 3),
@@ -67,7 +67,7 @@ class SparseResUNet(nn.Module):
                         SparseConvTransposeBlock(
                             num_channels[k + 4],
                             num_channels[k + 5],
-                            3,
+                            2,
                             stride=2,
                         ),
                     'fuse':
