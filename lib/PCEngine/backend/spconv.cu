@@ -475,9 +475,9 @@ void ConvolutionForward_naive(
     // int buffer_offset = sum_nnz * in_channel;
     // printf("sum nnz: %d", sum_nnz);
 
-    int ksx = ksize_code / 311;
-    int ksy = (ksize_code - ksx * 311) / 17;
-    int ksz = ksize_code - ksx * 311 - ksy * 17;
+    int ksx = ksize_code / 94273;
+    int ksy = (ksize_code - ksx * 94273) / 311;
+    int ksz = ksize_code - ksx * 94273 - ksy * 311;
     int mid_weight_id = (ksx - 1) / 2 * ksy * ksz + 
         (ksy - 1) / 2 * ksz + (ksz - 1) / 2;
 
