@@ -570,7 +570,7 @@ void ConvolutionForward_naive(
         int fusion_kofs = 0;
         int all_count = 0;
         int cur_count = 0;
-        while (all_count < 25000){
+        while (all_count < 16000){
             cur_count = kernel_nnz.data_ptr<int>()[cur_idx + fusion_kofs];
             all_count += cur_count;
             gridnum_y += DIV_UP(cur_count, 16);
