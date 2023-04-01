@@ -52,7 +52,7 @@ def dataset_builder(dataset: str):
 device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--save-file', type=str, default='gather-scatter-over-torchsparse')
+parser.add_argument('--save-file', type=str, default='Fig10-gather-scatter')
 args = parser.parse_args()
 
 label_list = ['dataset', 'model', 'operator', 'normalized speedup']

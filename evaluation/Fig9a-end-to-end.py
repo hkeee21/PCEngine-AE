@@ -17,7 +17,7 @@ from lib.SpConv2.inference import spconv_exe
 from lib.TorchSparse.inference import torchsparse_exe
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--save-file', type=str, default='end-to-end')
+parser.add_argument('--save-file', type=str, default='Fig9a-end-to-end')
 args = parser.parse_args()
 
 label_list = ['model', 'dataset', 'framework', 'dataflow', 'latency [ms]', 'normalized speedup']

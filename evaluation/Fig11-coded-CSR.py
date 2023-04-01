@@ -51,7 +51,7 @@ def dataset_builder(dataset: str):
 device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--save-file', type=str, default='ablation-coded-csr')
+parser.add_argument('--save-file', type=str, default='Fig11-coded-CSR')
 args = parser.parse_args()
 
 label_list = ['dataset', 'model', 'operator', 'normalized speedup']

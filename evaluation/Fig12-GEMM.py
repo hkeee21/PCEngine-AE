@@ -20,7 +20,7 @@ sys.path.append('../')
 from lib.PCEngine.gemm_test import gemm_test
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--save-file', type=str, default='ablation-GEMM')
+parser.add_argument('--save-file', type=str, default='Fig12-GEMM')
 args = parser.parse_args()
 
 label_list = ['dataset', 'GEMM scheme', 'latency [ms]', 'normalized speedup', 'FLOPs', 'normalized utilization']

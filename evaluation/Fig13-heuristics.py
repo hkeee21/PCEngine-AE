@@ -15,7 +15,7 @@ sys.path.append('../')
 from lib.PCEngine.inference import pcengine_exe
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--save-file', type=str, default='ablation-heuristics')
+parser.add_argument('--save-file', type=str, default='Fig13-heuristics')
 args = parser.parse_args()
 
 label_list = ['model', 'dataset', 'framework', 'dataflow', 'latency', 'normalized speedup']

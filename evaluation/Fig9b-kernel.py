@@ -17,7 +17,7 @@ from lib.SpConv2.spconv_kernel import spconv_kernel
 from lib.TorchSparse.spconv_kernel import torchsparse_kernel
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--save-file', type=str, default='sparse-convolution-kernel')
+parser.add_argument('--save-file', type=str, default='Fig9b-kernel')
 args = parser.parse_args()
 
 label_list = ['input channel', 'output channel', 'dataset', 'framework', 'latency [ms]', 'normalized speedup']
