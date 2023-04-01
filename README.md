@@ -43,7 +43,7 @@ If the path does not exist, try to use a higher version CUDA.
     - SpConv can be installed through `pip`. Please refer to the [official repository](https://github.com/traveller59/spconv).
 - Download datasets
 
-    Please download [AE-datasets](https://drive.google.com/file/d/1137pnf`O2l-EP2ZTGBGfPvGrwBl-LX331/view?usp=share_link) and unzip the `AE-datasets.zip` file into a PCEngine-AE subdirectory as follows
+    Please download [AE-datasets](https://drive.google.com/file/d/1137pnfO2l-EP2ZTGBGfPvGrwBl-LX331/view?usp=share_link) and unzip the `AE-datasets.zip` file into a PCEngine-AE subdirectory as follows
     ```
     |---- PCEngine-AE directory
             |---- AE-datasets
