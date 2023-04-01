@@ -34,7 +34,7 @@ def dataset_builder(framework: str, dataset: str):
         elif dataset == 'kitti':
             from lib.PCEngine.datasets.KITTI import KITTIDataset
             builder = KITTIDataset(
-                path='AE-datasets/KITTI/testing/velodyne/',
+                path='AE-datasets/KITTI',
                 size=1000
             )
         else:
@@ -57,7 +57,7 @@ def dataset_builder(framework: str, dataset: str):
         elif dataset == 'kitti':
             from lib.SpConv2.KITTI import KITTIDataset as spKITTIDataset
             builder = spKITTIDataset(
-                path='AE-datasets/KITTI/testing/velodyne/',
+                path='AE-datasets/KITTI',
                 size=1000
             )
         else:

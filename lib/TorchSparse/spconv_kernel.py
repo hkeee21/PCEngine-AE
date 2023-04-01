@@ -39,7 +39,7 @@ def torchsparse_kernel(c_mid: int, c_out: int, data: str, dataflow):
         )
     elif data == 'kitti':
         dataset = KITTIDataset(
-            path='../AE-datasets/KITTI/testing/velodyne/',
+            path='../AE-datasets/KITTI',
             size=1000
         )
     elif data == 's3dis':
