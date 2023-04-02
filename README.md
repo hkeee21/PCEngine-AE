@@ -77,11 +77,15 @@ If the path does not exist, try to use a higher version CUDA.
     python Fig9b-kernel.py
   ```
   Compare gather and scatter performance to TorchSparse and generate the results into a `.csv` file (Fig. 10)
+  - Add "--fast" to reduce the evaluation time.
   ```
     cd evaluation
     python Fig10-gather-scatter.py
   ```
   Conduct the ablation study on coded-CSR format and generate the results into a `.csv` file (Fig. 11)
+  - Note that Fig11-coded-CSR.py and Fig10-gather-scatter.py can not be run simultaneously, 
+    as the two scripts reuse the same file to store intermediate results.
+  - Add "--fast" to reduce the evaluation time.
   ```
     cd evaluation
     python Fig11-coded-CSR.py

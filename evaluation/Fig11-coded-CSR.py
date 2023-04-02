@@ -2,7 +2,8 @@
     This code is to generate the ablation study results of the coded-CSR format into a .csv file.
         Mapping format: coded-CSR, matrix.
         Benchmarks: {ModelNet40, S3DIS, KITTI} X {SparseResNet, MinkUNet}.
-        Command: $ python3 ablation-coded-CSR.py --save-file ${filename}
+        Command: $ python3 coded-CSR.py --save-file ${filename} --fast(optional)
+        "--fast" is recommanded to reduce evaluation time.
 '''
 
 import pandas as pd
@@ -52,6 +53,7 @@ device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--save-file', type=str, default='Fig11-coded-CSR')
+parser.add_argument("--fast", action="store_true")
 args = parser.parse_args()
 
 label_list = ['dataset', 'model', 'operator', 'normalized speedup']
@@ -103,7 +105,7 @@ for d, dataset in enumerate(dataset_list):
             i = 0
             with torch.no_grad():
                 for batch in tqdm(DataLoader):
-                    # if i == 100: break
+                    if i == 200 and args.fast: break
 
                     input = batch['input']
                     input = input.to(device)
