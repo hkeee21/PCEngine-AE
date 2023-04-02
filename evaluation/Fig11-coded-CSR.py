@@ -129,17 +129,17 @@ for d, dataset in enumerate(dataset_list):
                  (results_dict['vanilla-scatter'][r]/results_dict['coded-csr-scatter'][r])))'''
             speedup_array[r, 0] = results_dict['vanilla-gather'][r] / results_dict['coded-csr-gather'][r]
             speedup_array[r, 1] = results_dict['vanilla-scatter'][r] / results_dict['coded-csr-scatter'][r]
-        geo_speedup = np.prod(speedup_array, axis=0) ** (1 / results_len)
+        mean_speedup = np.mean(speedup_array, axis=0)
 
         dataset_col.append(dataset)
         model_col.append(model)
         operator_col.append('gather')
-        speedup_col.append(geo_speedup[0])
+        speedup_col.append(mean_speedup[0])
 
         dataset_col.append(dataset)
         model_col.append(model)
         operator_col.append('scatter')
-        speedup_col.append(geo_speedup[1])
+        speedup_col.append(mean_speedup[1])
 
 
 results = list(zip(model_col, dataset_col, operator_col, speedup_col))
