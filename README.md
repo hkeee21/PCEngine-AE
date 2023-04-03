@@ -10,8 +10,8 @@ This is the repository of PCEngine code for artifacts evaluation purpose. PCEngi
 ```
 Note the artifacts have been tested under following environments
 ``` 
-    CUDA 11.1
-    PyTorch 1.10.0
+    CUDA 11.1/11.6
+    PyTorch 1.10.0/1.12.0
     TorchSparse 2.0.0
     SpConv 2.2.3/2.2.6
 ```
