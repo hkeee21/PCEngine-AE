@@ -79,8 +79,6 @@ class S3DISDataset(Dataset):
             (self.room_coord_max[room_idx][1] - self.room_coord_min[room_idx][1])
         current_points[:, 8] = (selected_points[:, 2] - self.room_coord_min[room_idx][2]) / \
             (self.room_coord_max[room_idx][2] - self.room_coord_min[room_idx][2])
-        # selected_points[:, 0] = selected_points[:, 0] - center[0] # 再将坐标移至随机采样的中心点
-        # selected_points[:, 1] = selected_points[:, 1] - center[1]
         selected_points[:, 3:6] /= 255.0 
         current_points[:, 0:6] = selected_points
         current_labels = labels[selected_point_idxs]
