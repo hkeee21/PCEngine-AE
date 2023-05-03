@@ -1,5 +1,6 @@
 ## **PCEngine-AE**
 This is the repository of PCEngine code for artifacts evaluation purpose. PCEngine is an optimized engine for voxel-based point cloud neural networks. Based on a noval coded-CSR format, indicator-assisted segmented GEMM (GEneral Matrix Multiplication) fusion and heuristics adaptive dataflow, PCEngine outperforms previous works in sparse convolution inference.
+[Notice] This repository will not be updated in the future. Please refer to the [official PCEngine repository](https://github.com/hkeee21/PCEngine) for the latest version. 
 
 ### **Requirements**
 ``` 
